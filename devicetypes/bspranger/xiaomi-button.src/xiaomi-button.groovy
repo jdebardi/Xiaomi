@@ -48,7 +48,7 @@ metadata {
 		attribute "lastReleasedCoRE", "string"
 		attribute "lastButtonMssg", "string"
 		attribute "batteryRuntime", "string"
-		attribute "buttonStatus", "enum", ["pushed", "held", "released", "double", "triple", "quadruple", "shizzle"]
+		attribute "buttonStatus", "enum", ["pushed", "held", "released", "double"]
 
 		fingerprint deviceId: "0104", inClusters: "0000,0003,FFFF,0019", outClusters: "0000,0004,0003,0006,0008,0005,0019", manufacturer: "LUMI", model: "lumi.sensor_switch", deviceJoinName: "Original Xiaomi Button"
 
