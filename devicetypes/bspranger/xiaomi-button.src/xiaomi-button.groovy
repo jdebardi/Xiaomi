@@ -346,9 +346,9 @@ def initialize (paired) {
 	if (!device.currentState('batteryRuntime')?.value)
 		resetBatteryRuntime(paired)
 	clearButtonStatus()
-	if (device.currentValue("numberOfButtons") != 5) {
-		sendEvent(name: "numberOfButtons", value: 5, displayed: false)
-		displayInfoLog(": Number of buttons set to 5")
+	if (device.currentValue("numberOfButtons") != 1) {
+		sendEvent(name: "numberOfButtons", value: 1, displayed: false)
+		displayInfoLog(": Number of buttons set to 1")
 	}
 }
 
