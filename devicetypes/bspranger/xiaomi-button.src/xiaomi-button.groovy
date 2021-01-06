@@ -40,8 +40,6 @@ metadata {
 		capability "Configuration"
 		capability "Health Check"
 		capability "Holdable Button"
-		capability "Momentary"
-		capability "Sensor"
 
 		attribute "lastCheckin", "string"
 		attribute "lastCheckinCoRE", "string"
