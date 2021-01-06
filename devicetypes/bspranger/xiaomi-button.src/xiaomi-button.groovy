@@ -167,7 +167,7 @@ def updateLastPressed(pressType) {
 }
 
 private createButtonEvent() {
-	def timeDif = now() - device.latestState('lastButtonMssg').date.getTime()
+	def timeDif = now() - device.latestState('lastPressedCoRE').date.getTime()
 	def holdTimeMillisec = Math.round((settings.waittoHeld?:2.0) * 1000)
 	displayInfoLog(": Button release detected")
 	displayDebugLog(": Comparing time difference between this button release and last button message")
