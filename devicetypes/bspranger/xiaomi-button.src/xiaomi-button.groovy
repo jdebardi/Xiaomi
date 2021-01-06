@@ -210,7 +210,7 @@ private Map parseReadAttrMessage(String description) {
 		displayInfoLog(descText)
 		resultMap = [
 			name: 'button',
-			value: 'double',
+			value: clickType[buttonNum],
 			data: [buttonNumber: 1],
 			descriptionText: "$device.displayName$descText",
 			isStateChange: true
