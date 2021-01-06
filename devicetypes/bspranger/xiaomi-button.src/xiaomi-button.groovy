@@ -173,7 +173,7 @@ private createButtonEvent() {
 	displayDebugLog(": Comparing time difference between this button release and last button message")
 	displayDebugLog(": Time difference = $timeDif ms, Hold time setting = $holdTimeMillisec ms")
 	// compare waittoHeld setting with difference between current time and lastButtonMssg
-	def buttonHeld = (timeDif >= holdTimeMillisec & timeDif < holdTimeMillisec + 10000) ? true : false
+	def buttonHeld = (timeDif >= holdTimeMillisec & timeDif < holdTimeMillisec + 3000) ? true : false
 	def pressType = buttonHeld ? "held" : "pushed"
 	def descText = " was $pressType (button 1 $pressType)"
 	sendEvent(name: "buttonStatus", value: pressType, isStateChange: true, displayed: false)
